@@ -18,10 +18,6 @@ That's it! Now you can enjoy playing chess.
 
 - [Stockfish](https://stockfishchess.org/) - a chess engine.
 
-## License
-
-This project is licensed under the terms of [your license name]. Details can be found in the `LICENSE` file.
-
 ## Author
 
 - Daniil Voropaev
