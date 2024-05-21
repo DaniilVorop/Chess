@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CourseWork"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\;CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\;CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\;CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\;CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayHostLinux">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayHostLinux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayHostLinux"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayHostLinux/fast">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayHostLinux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayHostLinux/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayClientLinux">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayClientLinux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayClientLinux"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayClientLinux/fast">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayClientLinux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayClientLinux/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayHostWindows">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayHostWindows" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayHostWindows"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayHostWindows/fast">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayHostWindows" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayHostWindows/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayClientWindows">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayClientWindows" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayClientWindows"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PlayClientWindows/fast">
+				<Option output="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/PlayClientWindows" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 PlayClientWindows/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Algorithms.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Bishop.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Bishop.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Board.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Board.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Coordinates.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Exceptions.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Figure.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Figure.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Game.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Game.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Header.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageBoard.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageMenu.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/King.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/King.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Knight.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Knight.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/MyDeque.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Network.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Network.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Pawn.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Pawn.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Queen.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Queen.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Rook.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Rook.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/StockFish.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/StockFish.h">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/main.cpp">
+			<Option target="PlayHostLinux"/>
+			<Option target="PlayClientLinux"/>
+			<Option target="PlayHostWindows"/>
+			<Option target="PlayClientWindows"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/lib/cmake/SFML/SFMLStaticTargets.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\SFML-2.6.1-linux-gcc-64-bit\SFML-2.6.1\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CourseWork",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PlayClientLinux::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PlayClientLinux-Debug-2a4ef857e7e8f739a32d.json",
+					"name" : "PlayClientLinux",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PlayClientWindows::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PlayClientWindows-Debug-61eaac71b81acfe8b446.json",
+					"name" : "PlayClientWindows",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PlayHostLinux::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PlayHostLinux-Debug-452601cadbff5a83eb7c.json",
+					"name" : "PlayHostLinux",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PlayHostWindows::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PlayHostWindows-Debug-73d39fa77c82e9bc0833.json",
+					"name" : "PlayHostWindows",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug",
+		"source" : "/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

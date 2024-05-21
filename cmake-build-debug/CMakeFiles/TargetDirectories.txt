@@ -1,0 +1,6 @@
+/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/CMakeFiles/PlayHostLinux.dir
+/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/CMakeFiles/PlayClientLinux.dir
+/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/CMakeFiles/PlayHostWindows.dir
+/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/CMakeFiles/PlayClientWindows.dir
+/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/CMakeFiles/rebuild_cache.dir
