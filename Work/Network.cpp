@@ -4,12 +4,10 @@
 
 
 #include "Network.h"
-#include <fcntl.h>
 #define PORT 9999
 
 
 #ifdef _WIN32
-#include <ws2tcpip.h>
 
 void *Network::establishConnectionHost(int& serverSocket, std::mutex& mutex, int& result) {
     sockaddr_in serveAddress{}, clientAddress{};
@@ -98,42 +96,34 @@ void *Network::establishConnectionHost(int& serverSocket, std::mutex& mutex, int
 }
 
 std::string Network::getIpAddress() {
-    system("powershell (Get-NetIPAddress -AddressFamily IPv4).IPAddress > tmp.txt");
-    std::ifstream file("tmp.txt");
-    std::string ipAddress;
-    std::getline(file, ipAddress);
-    file.close();
-    std::cout << ipAddress << std::endl << std::endl;
-    std::string firstIpAddress;
-    for (int i = 0; i < ipAddress.length(); i++)
-        if (ipAddress[i] == ' ') {
-            firstIpAddress = ipAddress.substr(0, i);
-            break;
-        }
-    std::remove("tmp.txt");
-    return firstIpAddress;
+    WSADATA wsaData;
+    WSAStartup(MAKEWORD(2, 2), &wsaData);
+
+    char hostname[256];
+    gethostname(hostname, sizeof(hostname));
+
+    addrinfo hints = {};
+    hints.ai_family = AF_INET;  // AF_INET for IPv4
+    hints.ai_socktype = SOCK_STREAM;
+    hints.ai_protocol = IPPROTO_TCP;
+    addrinfo *result;
+    if (getaddrinfo(hostname, nullptr, &hints, &result) != 0) {
+        WSACleanup();
+        return "Undefined";
+    }
+    auto *socketAddr = reinterpret_cast<sockaddr_in *>(result->ai_addr);
+    char ipStr[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET, &(socketAddr->sin_addr), ipStr, INET_ADDRSTRLEN);
+
+    freeaddrinfo(result);
+    WSACleanup();
+    return strcmp(ipStr, "127.0.0.1") == 0 ? "No connection" : ipStr;
 }
-//std::string Network::getIpAddress() {
-//    std::string ipAddress;
-//    system("hostname -I > tmp.txt");
-//    std::ifstream file("tmp.txt");
-//    std::getline(file, ipAddress);
-//    file.close();
-//    std::cout << ipAddress << std::endl << std::endl;
-//    std::string firstIpAddress;
-//    for(int i = 0; i < ipAddress.length(); i++)
-//        if (ipAddress[i] == ' ') {
-//            firstIpAddress = ipAddress.substr(0, i);
-//            break;
-//        }
-//    remove("tmp.txt");
-//    return firstIpAddress;
-//}
+
 bool Network::establishConnectionClient(const std::string& ipAddress) {
     sockaddr_in serverAddress{};
     std::cout << ipAddress;
     fflush(stdout);
-
     // Инициализация Winsock
     WSADATA wsaData;
     int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -141,14 +131,12 @@ bool Network::establishConnectionClient(const std::string& ipAddress) {
         std::cerr << "WSAStartup failed: " << iResult << std::endl;
         return false;
     }
-
     // Создание сокета
     if ((clientSocket = static_cast<int>(socket(AF_INET, SOCK_STREAM, 0))) == INVALID_SOCKET) {
         std::cerr << "Socket creation failed" << std::endl;
         WSACleanup();
         return false;
     }
-
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(PORT);
     inet_pton(AF_INET, ipAddress.c_str(), &serverAddress.sin_addr);
@@ -229,6 +217,7 @@ char* Network::waitMsg(char* msg) const{
 #ifdef __linux__
 #include <arpa/inet.h>
 #include <sys/socket.h>
+#include <csignal>
 #include <cstring>
 
 void *Network::establishConnectionHost(int& serverSocket,std::mutex& mutex, int& result) {
@@ -281,21 +270,51 @@ void *Network::establishConnectionHost(int& serverSocket,std::mutex& mutex, int&
     pthread_exit(nullptr);
 }
 
+//std::string Network::getIpAddress() {
+//    std::string ipAddress;
+//    system("hostname -I > tmp.txt");
+//    std::ifstream file("tmp.txt");
+//    std::getline(file, ipAddress);
+//    file.close();
+//    std::cout << ipAddress << std::endl << std::endl;
+//    std::string firstIpAddress;
+//    for(int i = 0; i < ipAddress.length(); i++)
+//        if (ipAddress[i] == ' ') {
+//            firstIpAddress = ipAddress.substr(0, i);
+//            break;
+//        }
+//    remove("tmp.txt");
+//    return firstIpAddress;
+//}
+#include <ifaddrs.h>
+#include <arpa/inet.h>
+
 std::string Network::getIpAddress() {
     std::string ipAddress;
-    system("hostname -I > tmp.txt");
-    std::ifstream file("tmp.txt");
-    std::getline(file, ipAddress);
-    file.close();
-    std::cout << ipAddress << std::endl << std::endl;
-    std::string firstIpAddress;
-    for(int i = 0; i < ipAddress.length(); i++)
-        if (ipAddress[i] == ' ') {
-            firstIpAddress = ipAddress.substr(0, i);
-            break;
+    struct ifaddrs *ifAddr,* ifAddrTmp;
+    struct sockaddr_in *addr;
+    char addrStr[INET_ADDRSTRLEN];
+
+    if (getifaddrs(&ifAddr) == 0) {
+        ifAddrTmp = ifAddr;
+        while (ifAddrTmp != nullptr) {
+            if (ifAddrTmp->ifa_addr->sa_family == AF_INET) {
+                addr = (struct sockaddr_in *) ifAddrTmp->ifa_addr;
+                inet_ntop(AF_INET, &addr->sin_addr, addrStr, INET_ADDRSTRLEN);
+                ipAddress = addrStr;
+                if (ipAddress != "127.0.0.1"){
+                    freeifaddrs(ifAddr);
+                    return ipAddress;
+                }
+            }
+            ifAddrTmp = ifAddrTmp->ifa_next;
         }
-    remove("tmp.txt");
-    return firstIpAddress;
+        freeifaddrs(ifAddr);
+    } else {
+        std::cerr << "Error getting IP address" << std::endl;
+        return "Undefined";
+    }
+    return "No connection";
 }
 
 bool Network::establishConnectionClient(const std::string& ipAddress) {
@@ -349,6 +368,7 @@ void Network::sendMsg(const std::string& msg) const {
 
 char* Network::waitMsg(char* msg) const{
     ssize_t bytesReceived = read(clientSocket, msg, 100);
+    //    ssize_t bytesReceived = recv(network.getClientSocket(), msg, 100, 0);
     if (bytesReceived == 0 || bytesReceived == 1){
         std::cerr << "Error receiving data" << std::endl;
         strcpy(msg, "Exit");

@@ -1,10 +1,16 @@
 CMakeFiles/PlayClientLinux.dir/Work/main.cpp.o: \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/main.cpp \
  /usr/include/stdc-predef.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Board.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Pawn.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Figure.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Game.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Graphics.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Config.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Clock.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Export.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Time.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Err.hpp \
+ /usr/include/c++/13/ostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
@@ -13,9 +19,8 @@ CMakeFiles/PlayClientLinux.dir/Work/main.cpp.o: \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/ostream \
- /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
- /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/ios \
+ /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/wchar.h \
  /usr/include/bits/libc-header-start.h /usr/include/bits/floatn.h \
@@ -129,29 +134,7 @@ CMakeFiles/PlayClientLinux.dir/Work/main.cpp.o: \
  /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_inline.h \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
- /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Coordinates.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Header.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Exceptions.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Knight.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Bishop.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Rook.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Queen.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/King.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageBoard.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Graphics.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Config.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Clock.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Export.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Time.hpp \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/Err.hpp \
+ /usr/include/c++/13/bits/ostream.tcc \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/InputStream.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \
@@ -199,6 +182,10 @@ CMakeFiles/PlayClientLinux.dir/Work/main.cpp.o: \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window/Sensor.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window/Touch.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window/VideoMode.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window/Window.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window/WindowBase.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Window/Vulkan.hpp \
@@ -242,17 +229,47 @@ CMakeFiles/PlayClientLinux.dir/Work/main.cpp.o: \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/cmake-build-debug/SFML-2.6.1-linux-gcc-64-bit/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Board.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Pawn.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Figure.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/istream \
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Coordinates.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Header.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Exceptions.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Knight.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Bishop.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Rook.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Queen.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/King.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageBoard.h \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/MyDeque.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Game.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/StockFish.h \
- /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
- /usr/include/c++/13/limits /usr/include/c++/13/bits/parse_numbers.h \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Network.h \
  /usr/include/c++/13/fstream \
  /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/csignal \
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/atomic \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/mutex /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/limits /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/types/struct_iovec.h /usr/include/linux/falloc.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/StockFish.h \
+ /usr/include/c++/13/chrono \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageMenu.h \
+ /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/csignal \
  /usr/include/signal.h /usr/include/bits/signum-generic.h \
  /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
  /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
@@ -268,17 +285,4 @@ CMakeFiles/PlayClientLinux.dir/Work/main.cpp.o: \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/bits/ss_flags.h \
  /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
- /usr/include/bits/signal_ext.h /usr/include/c++/13/atomic \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/mutex /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/std_thread.h \
- /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageMenu.h \
- /usr/include/c++/13/condition_variable \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/concurrence.h
+ /usr/include/bits/signal_ext.h

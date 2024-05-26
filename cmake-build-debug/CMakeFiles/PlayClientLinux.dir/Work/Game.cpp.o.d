@@ -248,15 +248,29 @@ CMakeFiles/PlayClientLinux.dir/Work/Game.cpp.o: \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/King.h \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageBoard.h \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/MyDeque.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/StockFish.h \
- /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
- /usr/include/c++/13/limits /usr/include/c++/13/bits/parse_numbers.h \
  /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/Network.h \
  /usr/include/c++/13/fstream \
  /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/csignal \
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/atomic \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/mutex /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/limits /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/StockFish.h \
+ /usr/include/c++/13/chrono \
+ /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageMenu.h \
+ /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/csignal \
  /usr/include/signal.h /usr/include/bits/signum-generic.h \
  /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
  /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
@@ -272,17 +286,4 @@ CMakeFiles/PlayClientLinux.dir/Work/Game.cpp.o: \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/bits/ss_flags.h \
  /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
- /usr/include/bits/signal_ext.h /usr/include/c++/13/atomic \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/mutex /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/std_thread.h \
- /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /home/bobr/CLionProjects/ChessGameForLinuxAndWIndows/Work/ImageMenu.h \
- /usr/include/c++/13/condition_variable \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/concurrence.h
+ /usr/include/bits/signal_ext.h

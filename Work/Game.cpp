@@ -787,7 +787,7 @@ void Game::newOnlineGame() {
     std::atomic<bool> newMsg = false;
 
     network.getThreadId() = std::thread(&Game::opponentAction, this, network.getTypeClient(), &newMsg);
-    processNetworkGame(network.getTypeClient(), &newMsg);
+    processNetworkGame(&newMsg);
 }
 
 bool Game::setConnection() {
@@ -877,6 +877,7 @@ void Game::endNetworkGame() {
     int sizeButtonX = 202;          // Размер кнопки Х
     int distanceButton = 100;       // Расстояние между кнопками
     network.closeConnection();
+
     while (this->waitClick()) {       // Ожидание нажатия ЛКМ
         // Получить кнопку, на которую нажали
         if (event.mouseButton.x > marginSidebarX &&
@@ -897,11 +898,11 @@ void Game::endNetworkGame() {
     }
 }
 
-void Game::processNetworkGame(NetworkClient typeClient, std::atomic<bool>* newMsg) {
+void Game::processNetworkGame(std::atomic<bool>* newMsg) {
     while (window.isOpen() && board.getStateGame() != StateGame::Exit) {
-        board.checkOnMate();
         this->drawGame();
         window.display();
+        board.checkOnMate();
         if (board.getStateGame() != StateGame::GameOn) {
             this->endNetworkGame();
             return;
@@ -910,13 +911,13 @@ void Game::processNetworkGame(NetworkClient typeClient, std::atomic<bool>* newMs
             newMsg->store(false);
             continue;
         }
-        playerAction(typeClient, newMsg);
+        playerAction(newMsg);
     }
     network.closeConnection();
 }
 
 
-void Game::playerAction(NetworkClient typeClient, std::atomic<bool>* newMsg) {
+void Game::playerAction(std::atomic<bool>* newMsg) {
     bool flHaveMove{false}; // Флаг был ли ход
     Coordinates coordinatesClick1{}, coordinatesClick2{};
     std::vector<Coordinates> availableCoordinates;
@@ -924,8 +925,8 @@ void Game::playerAction(NetworkClient typeClient, std::atomic<bool>* newMsg) {
 
         mutex.lock();
         if (getCoordinatesPressedBox(coordinatesClick1) &&
-            (typeClient == NetworkClient::Host && board.itWhiteMoveNow() ||
-             typeClient == NetworkClient::Client && !board.itWhiteMoveNow()) &&
+            (this->network.getTypeClient() == NetworkClient::Host && board.itWhiteMoveNow() ||
+            this->network.getTypeClient() == NetworkClient::Client && !board.itWhiteMoveNow()) &&
             // Если нажатие было по позиции фигуры, которая сейчас ходит
             (board.map[coordinatesClick1.y][coordinatesClick1.x] != nullptr &&
              board.map[coordinatesClick1.y][coordinatesClick1.x]->isColorWhite() == board.itWhiteMoveNow())) {
@@ -956,7 +957,7 @@ void Game::playerAction(NetworkClient typeClient, std::atomic<bool>* newMsg) {
                         }
             } else return;
 
-        } else if (clickSidebarInNetworkGame(typeClient)) { // Если было нажатие на боковую панель, выйти из цикла
+        } else if (clickSidebarInNetworkGame(this->network.getTypeClient())) { // Если было нажатие на боковую панель, выйти из цикла
             mutex.unlock();
             break;
         }
@@ -1015,6 +1016,7 @@ bool Game::clickSidebarInNetworkGame(NetworkClient typeClient) {
 
 ActionInternetOpponent Game::waitOpponentAction(std::atomic<bool>* newMsg ,char* msg) const{
     msg = network.waitMsg(msg);
+    newMsg->store(true);
     if (strcmp(msg, "Exit") == 0)
         return ActionInternetOpponent::Exit;
     else if (strcmp(msg, "GiveUp") == 0)
@@ -1033,7 +1035,6 @@ void Game::opponentAction(NetworkClient typeClient, std::atomic<bool>* newMsg) {
                 board.moveTransition();
                 board.setBoardByFen(msg);
                 mutex.unlock();
-                newMsg->store(true);
                 break;
             case ActionInternetOpponent::GiveUp:
             case ActionInternetOpponent::Exit:
@@ -1041,7 +1042,6 @@ void Game::opponentAction(NetworkClient typeClient, std::atomic<bool>* newMsg) {
                     board.setStateGame(StateGame::WhiteWin);
                 else if (typeClient == NetworkClient::Client)
                     board.setStateGame(StateGame::BlackWin);
-                newMsg->store(true);
                 return;
             case ActionInternetOpponent::Undefined:
                 break;

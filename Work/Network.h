@@ -6,19 +6,21 @@
 #define COURSEWORK_NETWORK_H
 #include "Header.h"
 #include <fstream>
-#include <csignal>
 #include <atomic>
 #include <mutex>
 #include <thread>
+#include <fcntl.h>
 
 #ifdef _WIN32
-//#include <winsock2.h>
-
+#include <winsock2.h>
 #include <winsock.h>
 #include <chrono>
 #include <mutex>
+#include <iphlpapi.h>
+#include <ws2tcpip.h>
 
-#pragma comment(lib, "ws2_32.lib")
+#pragma comment(lib, "Ws2_32.lib")
+#pragma comment(lib, "Iphlpapi.lib")
 #endif
 
 class Network {

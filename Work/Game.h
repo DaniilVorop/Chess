@@ -7,14 +7,12 @@
 #include <SFML/Graphics.hpp>
 #include "Board.h"
 #include "iostream"
-#include "StockFish.h"
 #include "Network.h"
+#include "StockFish.h"
 #include <fstream>
 #include <thread>
 #include "ImageMenu.h"
 #include <condition_variable>
-//#include <arpa/inet.h>
-//#include <sys/socket.h>
 #include "pthread.h"
 #include <csignal>
 #include <atomic>
@@ -25,13 +23,15 @@ private:
     Board board;                                        // game board
     StockFish stockFish;                                // play with computer
     bool colorPlayer1IsWhite{true};
-    bool colorPlayer2IsWhite{false};                  // or computer
+    bool colorPlayer2IsWhite{false};
     sf::RenderWindow window;                            // окно приложения
     sf::Event event{};                                    // Обработчик событий
     ImageMenu texture;                                  // изображения
     bool opponentComputer{};                            // установка компьютера соперником
     Network network;
+
     std::mutex mutex;
+
 public:
     void start();                                       // начало игры
     Game() = default;
@@ -49,7 +49,7 @@ private:
 
     void processGameWithFriend();                       // Цикл игры с игроком
     void processGameWithComputer();                     // цикл игры с компьютером
-    void processNetworkGame(NetworkClient typeClient, std::atomic<bool>* newMsg);
+    void processNetworkGame(std::atomic<bool>* newMsg);
 
     void movePlayer();                                  // получение хода от игрока
     bool saveOrReturnGame(bool saveGame);               // сохранение/восстановление игры с файла
@@ -78,7 +78,7 @@ private:
     NetworkClient selectTypeClient();
     bool waitConnect(const int *result);
 
-    void playerAction(NetworkClient typeClient, std::atomic<bool>* newMsg);
+    void playerAction(std::atomic<bool>* newMsg);
     void opponentAction(NetworkClient typeClient,std::atomic<bool>* newMsg);
     ActionInternetOpponent waitOpponentAction(std::atomic<bool> *newMsg, char *msg) const;
 
